@@ -98,7 +98,7 @@ export EDITOR='subl -w'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#vcs (git) 
+# vcs (git) 
 alias gst='git status'
 alias gc='git commit'
 alias gco='git checkout'
@@ -110,13 +110,16 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias del='git branch -d'
 
-#webdev
+# webdev
 alias saf='open -a safari'
 alias chr='open -a chrome'
 alias fox='open -a firefox'
 alias opr='open -a opera'
+# opens a file in all web browsers
+# I do not have Chrome installed currently
+function webtest { fox $1; saf $1; opr $1; }
 
-#filesystem
+# filesystem
 alias wrgc='cd ~/Documents/Code/wrg-client/'
 alias wrgs='cd ~/Documents/Code/wrg-server/'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
