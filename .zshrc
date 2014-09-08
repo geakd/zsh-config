@@ -97,6 +97,8 @@ export EDITOR='subl -w'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#vcs (git) 
 alias gst='git status'
 alias gc='git commit'
 alias gco='git checkout'
@@ -107,10 +109,14 @@ alias gd='git diff | subl'
 alias gb='git branch'
 alias gba='git branch -a'
 alias del='git branch -d'
+
+#webdev
 alias saf='open -a safari'
 alias chr='open -a chrome'
 alias fox='open -a firefox'
 alias opr='open -a opera'
+
+#filesystem
 alias wrgc='cd ~/Documents/Code/wrg-client/'
 alias wrgs='cd ~/Documents/Code/wrg-server/'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
